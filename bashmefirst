@@ -1,0 +1,65 @@
+#!/bin/sh
+#DEPENDENCIES
+#  Be sure to have read the README file so as to know to 
+#    have installed DEPENDS first then run bash script
+#"""          """
+#Author       :Damon,Skott
+#Email        :Damon.Skott@github.com
+#GitHub       :github.com/D8m0n/stepchild.git/
+
+#"""          """
+sleep 2
+sudo apt install git wget curl nano python python3 python-pip -y
+pip install --upgrade pip
+pip install wheel
+pip install main
+pip install mechanize
+pip install sphinx
+pip install sparrow
+pip install time
+sudo apt install toilet figlet -y
+sleep 1
+toilet -f small "phheeeewwww" --gay
+sleep 2
+sudo apt install aircrack-ng 
+sudo apt update && sudo apt upgrade -y
+sudo apt autoremove -y
+sleep 1
+clear
+git clone https://github.com/Ranginang67/DarkFly-Tool.git/
+cd DarkFly-Tool
+sudo chmod +x install.py
+sudo python3 install.py
+sleep 2
+cd
+git clone https://github.com/Lin8x/Tool-X.git/
+cd Tool-X
+sudo chmod +x install.aex
+sudo bash install.aex
+cd
+git clone https://github.com/Bash-Snippets/bash-snippets.git/
+cd Bash-Snippets
+bash bash-snippets
+cd
+sudo apt install php golang w3m 
+sudo apt update && upgrade -y
+clear
+tput setaf 11;echo " !...........................! "
+tput setaf 11;echo " : THAT'LL DO PIG that'll do : "
+tput setaf 11'echo " !...........................! "
+tput setaf 78;echo " : CONT,TO SCRIPT NOW THANX  : "
+tput setaf 84;echo " !...........................! "
+sleep 2
+clear
+echo " 1) continue "
+echo " 2) dont cont"
+echo " 4) where;s 3"
+echo " x) WTF"
+read r
+case $r in
+  1)clear && cd;echo "then go bash scripts already lazy fucker";sleep 3;clear;exit;;
+  2)clear && cd;echo "fucker";sleep 2;clear;exit;;
+  4)clear && cd;echo " 3 that little pragg muthah slipped out with jareds wife called out stole the comp truck and is ot snorting and fucking away"sleep 4;clear;exit;;
+  x)clear && cd;exit;;
+esac
+

@@ -1,0 +1,32 @@
+ #!/bin/sh 
+sudo apt update && sudo apt upgrade -y
+sudo apt install curl -y
+sudo apt install wget -y
+sudo apt install git -y
+sudo apt install python -y
+sudo apt install python2 -y
+sudo apt install zsh -y
+clear
+tput setaf 21;echo "IF READING THIS THAN ALL THUS FAR WENT SMOOTH AND WELL"
+tput setaf 24;echo "        PART ll STARTS NOW          "
+sleep 4
+echo " install oh my zsh"
+sleep 3
+clear
+echo
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo 'then syntax'
+sleep 3
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+tput setaf 21;echo "now.. nano the .zshrc file and add zsh-syntax-highlighting to the plugins."
+tput setaf 21;echo "plugins=(git ......... zsh-syntax-highlighting)"
+tput setaf 21;echo "make sure it is the last one listed in the plugins section."
+sleep 8
+clear
+echo "  WELL THAT IS IT YOU SHOULD HAVE MET ALL YOURE" | lolcat -a
+echo "            ISH OH-MY-ISH AND PIG_DE_TAX NEEDS " | lolcat -a
+echo "       THANK YOU FOR CHOOSING OUR SKY_lin_NET  " | lolcat -a
+echo "                  ISH INSTALLER                " | lolcat -a
+sleep 4
+exit
+
