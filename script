@@ -1,0 +1,182 @@
+#!/usr/bin/zsh
+clear
+# sudo bash /home/Damon/builds/loader
+tput setaf 11;figlet -f small "BOOF-NUT-SEC"
+tput setaf 5;echo "    ....................."
+echo -e $(tput setaf 5)"    :"$(tput setaf 9)" [A[B[C[D[E[F[G[H]"$(tput setaf 5)" :"
+echo -e $(tput setaf 5)"    :"$(tput setaf 2)" [I[J[K[L[M[N[O[P]"$(tput setaf 5)" :"
+echo -e $(tput setaf 5)"    :"$(tput setaf 6)" [Q[R[S[T[U[V[W[X]"$(tput setaf 5)" :"
+tput setaf 5;echo "    :...................:"
+tput setaf 14;echo " ............................."
+echo -e $(tput setaf 14)" :"$(tput setaf 11)" SIMPLY TYPE SELCTED INDEX"$(tput setaf 14)" :"
+tput setaf 14;echo " :...........................:"
+read d
+if [ $d = a ]
+then
+  tput setaf 64;echo "...........   ........."
+  tput setaf 5;toilet -f small "INDEX: A's ";
+  tput setaf 64;echo "...........    ........."
+  echo " a)Dennis Nedry "
+  read sub
+  case $sub in
+    a) echo "HA! HA! HA!";sleep 2;clear;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = b ]
+then
+  echo "......      ......"
+  tput setaf 14;toilet -f small "INDEX: B's "
+  echo "......      ......"
+  echo " 1)Dennis Nedry"
+  read sub
+  case $sub in
+    1)echo "HA! HA! HA!";sleep 1;clear;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = c ]
+then
+  tput setaf 12;toilet -f small "INDEX: C's "
+  echo ".........................................."
+  echo " a)Dennis Nedry"
+  read sub
+  case $sub in
+    a) clear;echo "HA! HA! HA!";sleep 1;clear;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = d ]
+then
+  tput setaf 9;toilet -f small "INDEX: D's "
+  echo "   ..........."
+  echo " d): DarkFly :"
+  echo " 9): BACK    :"
+  echo "   :.........:"
+  read sub
+  case $sub in
+    d)clear && cd;sudo DarkFly;;
+    9)clear && cd;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = z ]
+then
+  tput setaf 19;echo "..............................."
+  tput setaf 11;echo ": CONGRATULATIONS && WELCOOME :"
+  tput setaf 19;echo "..............................."
+  echo " a).PIANOBAR"
+  echo " b)..WIFITE"
+  echo " c)...TRACE"
+  echo " d)....HUNNER"
+  echo " e)...LazyMux"
+  echo " f)..Tool-X  "
+  echo " g).OSIF"
+  echo " 8) xfburn"
+  echo " h)..LOCKPHISH"
+  echo " x)..LOG-OUT.."
+  echo " z)...HACKER.."
+  read sub
+  case $sub in
+    a)clear && cd;pianobar;;
+    b)clear && cd;sudo wifite;;
+    c)clear && cd;sudo trace start;bash /home/Damon/builds/script;;
+    d)clear && cd;sudo python3 /root/Hunner/hunner.py;bash /home/Damon/builds/script;;
+    e)clear && cd;sudo python3 /root/Lazymux/lazymux.py;bash /home/Damon/builds/script;;
+    f)clear && cd;sudo Tool-X;bash /home/Damon/builds/script;;
+    g)clear && cd;sudo python3 /root/OSIF/osif.py;bash /home/Damon/builds/script;;
+    h)clear && cd;sudo bash /root/lockphish/lockphish.sh;bash /home/Damon/builds/script;;
+    x)clear && cd;exit;;
+    8)clear && cd;sudo xfburn;;
+    z)clear && cd;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = e ]
+then
+  tput setaf 74;toilet -f small "INDEXES: e"
+  echo " 3)..Dennis Nerdy"
+  read sub
+  case $sub in
+    3)echo "HA! HA! HA!";sleep 2;clear;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = f ]
+then
+  echo " 4)..Dennis Nerdy"
+  read sub
+  case $sub in
+    4)clear && cd;echo " HA! HA! HA!";sleep 1;clear;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = g ]
+then
+  echo " 8)..Dennis Nerdy"
+  echo " 4).D8m0n/try--MX"
+  echo " 3)..ZSH ins"
+  echo " 2)oh my zsh"
+  read sub
+  case $sub in
+    8)clear && cd;echo "HA! HA! HA!";sleep 1;clear;bash /home/Damon/builds/script;;
+    4)clear && cd;git clone https://github.com/D8m0n/try-MX.git/;;
+    3)clear && cd;sudo apt install curl wget && sudo apt install zsh;;
+    2)clear && cd;git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  esac
+fi
+if [ $d = h ]
+then
+  tput setaf 9;echo " INDEX: H's "
+  echo " 9)..HACKTRONIAN "
+  echo " j)..HUNNER      "
+  read sub
+  case $sub in
+    9)clear && cd;sudo python /root/hacktronian/hacktronian.py;bash /home/Damon/builds/script;;
+    j)clear && cd;sudo python3 /root/Hunner/hunner.py;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = i ]
+then
+  echo " a) IESinstaller"
+  read sub
+  case $sub in
+    a) clear && cd;sudo bash /root/IESinstaller;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = l ]
+then
+  tput setaf 9;echo " INDEX: L's"
+  echo " f)..Lazymux "
+  echo " r)..Lockphish"
+  read sub
+  case $sub in
+    f) clear && cd;sudo python3 /root/Lazymux/lazymux.py;bash /home/Damon/builds/script;;
+    r) clear && cd;sudo bash /root/lockphish/lockphish.sh;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = ls ]
+then
+  echo "...................................."
+  echo ": EXAMPLE TYPE I: for all I indexes:"
+  echo ":                                  :"
+  echo ":..................................."
+  sleep 3
+  bash /home/Damon/builds/script
+fi
+if [ $d = m ]
+then
+  echo " 4)...MORPHEUS.."
+  read sub
+  case $sub in
+    4)clear && cd;sudo bash /root/morpheus/morpheus.sh;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = t ]
+then
+  echo " 2)..TOOL-X "
+  echo " 4)..TRace  "
+  read sub
+  case  $sub in
+    2)clear && cd;sudo Tool-X;bash /home/Damon/builds/script;;
+    4)clear && cd;sudo trace start;bash /home/Damon/builds/script;;
+  esac
+fi
+if [ $d = x ]
+then
+  clear
+  exit
+fi

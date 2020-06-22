@@ -1,0 +1,27 @@
+#1/bin/sh
+clear
+echo 
+echo -e $(tput setaf 2)  C$(tput setaf 8)O$(tput setaf 45)L$(tput setaf 33)O$(tput setaf 87)R$(tput setaf 43)S$(tput setaf 99)S
+tput setaf 0;echo "color zero"
+tput setaf 1;echo ".color one"
+tput setaf 2;echo "..color two"
+tput setaf 3;echo "...color trhree"
+tput setaf 4;echo "....color four"
+tput setaf 5;echo ".....color five"
+tput setaf 6;echo "......color six"
+tput setaf 7;echo "....color seven"
+tput setaf 8;echo "...color eight"
+tput setaf 9;echo "..color nine"
+tput setaf 11;echo " ......color eleven"
+tput setaf 12;echo " .....color twelve"
+tput setaf 13;echo " ..color thriteen"
+tput setaf 14;echo " ...color fourteen"
+tput setaf 15;echo " .....color fifteen"
+tput setaf 18;echo " ....color eighteen"
+tput setaf 19;echo " ...color nineteen"
+tput setaf 20;echo " ....color twenty"
+tput setaf 18;echo " ............"
+tput setaf 11;echo " :ROUND 0-20:" 
+tput setaf 18;echo " :..........."
+toilet -f small "colors yayy" --gay
+
